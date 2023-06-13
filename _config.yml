@@ -1,6 +1,7 @@
 # Site settings
 title: Manchester Fire Support Group 
 email: bod@mfsgct.org
+joinemail: join@mfsgct.org
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "mfsgct.org" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
