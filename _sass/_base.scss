@@ -27,6 +27,10 @@ a {
     }
 }
 
+a.light {
+    color: lighten($theme-primary, 25%);
+}
+
 h1,
 h2,
 h3,
