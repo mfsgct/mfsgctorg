@@ -28,7 +28,8 @@ a {
 }
 
 a.light {
-    color: lighten($theme-primary, 100%);
+    font-weight: 700;
+    color: $theme-dark;
 }
 
 h1,
