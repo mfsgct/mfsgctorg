@@ -154,7 +154,7 @@ aside {
 
 // Homepage Header
 
-header {
+header.frontpage {
     position: relative;
     width: 100%;
     min-height: auto;
@@ -187,8 +187,52 @@ header {
             }
         }
     }
+    .other-header-content {
+        height: 2vh;
+        position: relative;
+        text-align: center;
+        padding: 10px 15px 10px;
+        width: 100%;
+        .header-content-inner {
+            h1 {
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-top: 0;
+                margin-bottom: 0;
+                filter: drop-shadow(5px 5px 25px #000);
+            }
+            hr {
+                margin: 5px auto;
+            }
+            p {
+                font-weight: 300;
+                color: rgba(white, .7);
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+        }
+    }
     @media (min-width: 768px) {
         min-height: 100%;
+        .other-header-content {
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            padding: 0 0px;
+            .header-content-inner {
+                max-width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+                p {
+                    font-size: 24px;
+                    max-width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
         .header-content {
             position: absolute;
             top: 50%;
@@ -210,6 +254,89 @@ header {
         }
     }
 }
+
+// Other Pages Header
+
+header.otherpages {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    @include background-cover;
+    background-position: center;
+    background-image: url('../img/event-header.jpg');
+    text-align: center;
+    color: white;
+    .header-content {
+        position: relative;
+        text-align: center;
+        padding: 100px 15px 100px;
+        width: 100%;
+        .header-content-inner {
+            h1 {
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-top: 0;
+                margin-bottom: 0;
+                filter: drop-shadow(5px 5px 25px #000);
+            }
+            hr {
+                margin: 30px auto;
+            }
+            p {
+                font-weight: 300;
+                color: rgba(white, .7);
+                font-size: 16px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+    
+    @media (min-width: 768px) {
+        min-height: 25%;
+        .header-content {
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            padding: 0 50px;
+            .header-content-inner {
+                max-width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+                p {
+                    font-size: 18px;
+                    max-width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+footer { 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    .footer-content {
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        padding: 0 25px;
+        p {
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 10px; 
+            max-width: 50%;
+            text-align: center;
+        }
+    }
+}
+
 
 // Sections
 
