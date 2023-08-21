@@ -87,6 +87,8 @@ aside {
         font-weight: 700;
         text-transform: uppercase;
         filter: drop-shadow(0px 0px 3px rgba(255,255,255,.9));
+        font-size: 1em;
+        padding-left: 2vw;
         &:hover,
         &:focus {
             color: darken($theme-primary, 15%);
@@ -120,6 +122,9 @@ aside {
     @media (min-width: 768px) {
         background-color: transparent;
         border-color: rgba(white, .3);
+        .navbar-brand {
+            font-size: 1.5em;
+        }
         .navbar-header .navbar-brand {
             color: rgba(white, .7);
             &:hover,
