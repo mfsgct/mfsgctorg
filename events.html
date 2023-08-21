@@ -1,4 +1,10 @@
 ---
 layout: events
 title: Events
+data_source: events
 ---
+
+{% for event in site.events %}
+    {% include {{ event.anchor }}.html %}
+{% endfor %}
+
