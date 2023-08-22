@@ -81,7 +81,8 @@ aside {
     border-color: rgba($theme-dark, .5);
     @include sans-serif-font;
     @include transition-all;
-     .navbar-brand {
+     .navbar-brand-sm { display: none; }
+     .navbar-brand, .navbar-brand-sm {
         color: $theme-primary;
         @include sans-serif-font;
         font-weight: 700;
@@ -119,11 +120,22 @@ aside {
             }
         }
     }
+    @media (max-width: 390px) {
+        .navbar-brand {
+            display: none;
+        }
+         .navbar-brand-sm {
+            display: block;
+        }
+    }
     @media (min-width: 768px) {
         background-color: transparent;
         border-color: rgba(white, .3);
         .navbar-brand {
             font-size: 1.5em;
+        }
+        .navbar-brand-sm {
+            display: none;
         }
         .navbar-header .navbar-brand {
             color: rgba(white, .7);
